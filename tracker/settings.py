@@ -28,6 +28,8 @@ SECRET_KEY = (
 DEBUG = True
 
 LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "login"
+
 ALLOWED_HOSTS = []
 
 
