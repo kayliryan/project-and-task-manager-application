@@ -18,7 +18,7 @@ class TaskCreateView(LoginRequiredMixin, CreateView):
     ]
 
     def get_success_url(self):
-        return reverse_lazy("show_project", args=[self.object.id])
+        return reverse_lazy("show_project", args=[self.object.project.id])
 
 
 class TaskListView(LoginRequiredMixin, ListView):
